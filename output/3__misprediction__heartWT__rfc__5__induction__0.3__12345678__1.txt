@@ -1,0 +1,26 @@
+Loading model from .joblib...
+Check which test inputs are mispredicted by the model...
+Learn most influential input features...
+Train random forest classifier on misprediction data...
+Use feature importance to explain model...
+Most influential features:
+['serum_sodium', 'creatinine_phosphokinase', 'platelets', 'serum_creatinine', 'age']
+Build new input dataframe with relevant features...
+Run MMD to create misprediction explanation with rule induction(MMD) without disjunctions...
+Best ruleset with most influential features and rule induction(MMD) without disjunctions:
+
+age > 77 and creatinine_phosphokinase > 90
+
+Specificity: 1.0 Precision: 1.0 Recall: 0.2
+CPU time used extracting features: 0.2556321809999993 seconds
+CPU time used overall without disjunctions: 9.403907910000001 seconds
+Run MMD to create misprediction explanation with rule induction(MMD) with disjunctions...
+Best ruleset with most influential features and rule induction(MMD) with disjunctions:
+
+serum_creatinine > 2.5 or
+age > 77 and creatinine_phosphokinase > 90 or
+age > 77
+
+Specificity: 0.967 Precision: 0.833 Recall: 0.333
+CPU time used extracting features: 0.2556321809999993 seconds
+CPU time used overall with disjunctions: 38.040655132 seconds

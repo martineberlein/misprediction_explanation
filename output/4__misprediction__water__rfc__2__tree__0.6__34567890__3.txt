@@ -1,0 +1,25 @@
+Loading model from .joblib...
+Check which test inputs are mispredicted by the model...
+Learn most influential input features...
+Train random forest classifier on misprediction data...
+Use feature importance to explain model...
+Most influential features:
+['Conductivity', 'ph']
+Build new input dataframe with relevant features...
+Create misprediction explanation by learning decision trees...
+Best ruleset with most influential features and decision trees without disjunctions:
+
+ph > 5.6238136 and Conductivity <= 409.5966034
+
+Specificity: 0.696 Precision: 0.436 Recall: 0.477
+CPU time used extracting features: 0.5533638149999973 seconds
+CPU time used overall without disjunctions: 0.5756395319999967 seconds
+
+Best ruleset with most influential features and decision trees with disjunctions:
+
+ph > 5.6238136 and Conductivity <= 409.5966034 or
+ph > 4.2514374 and Conductivity > 507.4608765
+
+Specificity: 0.546 Precision: 0.416 Recall: 0.658
+CPU time used extracting features: 0.5533638149999973 seconds
+CPU time used overall with disjunctions: 0.5814807649999949 seconds

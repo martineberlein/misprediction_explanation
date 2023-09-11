@@ -1,0 +1,25 @@
+Loading model from .joblib...
+Check which test inputs are mispredicted by the model...
+Learn most influential input features...
+Train random forest classifier on misprediction data...
+Use feature importance to explain model...
+Most influential features:
+['age', 'ejection_fraction', 'creatinine_phosphokinase']
+Build new input dataframe with relevant features...
+Create misprediction explanation by learning decision trees...
+Best ruleset with most influential features and decision trees without disjunctions:
+
+ejection_fraction <= 32.5 and creatinine_phosphokinase > 92.0
+
+Specificity: 0.871 Precision: 0.55 Recall: 0.55
+CPU time used extracting features: 0.248546214000001 seconds
+CPU time used overall without disjunctions: 0.25670854700000234 seconds
+
+Best ruleset with most influential features and decision trees with disjunctions:
+
+ejection_fraction <= 32.5 and creatinine_phosphokinase > 92.0 or
+age > 83.0 and ejection_fraction > 45.0
+
+Specificity: 0.871 Precision: 0.591 Recall: 0.65
+CPU time used extracting features: 0.248546214000001 seconds
+CPU time used overall with disjunctions: 0.26214156400000377 seconds

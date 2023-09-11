@@ -1,0 +1,18 @@
+Loading model from .joblib...
+Check which test inputs are mispredicted by the model...
+Create misprediction explanation by learning decision trees...
+Best ruleset with all features and decision trees without disjunctions:
+
+duration > 530.5 and duration > 876.0
+
+Specificity: 0.981 Precision: 0.495 Recall: 0.192
+CPU time used without disjunctions: 0.17624189300000026 seconds
+
+Best ruleset with all features and decision trees with disjunctions:
+
+duration > 530.5 and duration > 876.0 or
+duration > 530.5 and age <= 42.5 or
+euribor3m <= 1.0655 and duration > 136.5
+
+Specificity: 0.903 Precision: 0.391 Recall: 0.643
+CPU time used with disjunctions: 0.23234646899999944 seconds

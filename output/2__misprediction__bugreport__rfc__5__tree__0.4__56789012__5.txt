@@ -1,0 +1,24 @@
+Loading model from .joblib...
+Check which test inputs are mispredicted by the model...
+Learn most influential input features...
+Train random forest classifier on misprediction data...
+Use feature importance to explain model...
+Most influential features:
+['NActivityInProject', 'InitialActivityCount', 'ticketCleanedBodyLen', 'projectCoverage', 'activitysequence']
+Build new input dataframe with relevant features...
+Create misprediction explanation by learning decision trees...
+Best ruleset with most influential features and decision trees without disjunctions:
+
+activitysequence > 0.209244 and activitysequence <= 0.643206
+
+Specificity: 0.741 Precision: 0.285 Recall: 0.68
+CPU time used extracting features: 1.124789199000002 seconds
+CPU time used overall without disjunctions: 1.1859881390000027 seconds
+
+Best ruleset with most influential features and decision trees with disjunctions:
+
+activitysequence > 0.209244 and activitysequence <= 0.643206
+
+Specificity: 0.741 Precision: 0.285 Recall: 0.68
+CPU time used extracting features: 1.124789199000002 seconds
+CPU time used overall with disjunctions: 1.1860202390000048 seconds

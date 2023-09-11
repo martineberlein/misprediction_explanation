@@ -1,0 +1,60 @@
+Loading model from .joblib...
+Check which test inputs are mispredicted by the model...
+Learn most influential input features...
+Train random forest classifier on misprediction data...
+Use feature importance to explain model...
+Most influential features:
+['city_development_index', 'training_hours']
+Build new input dataframe with relevant features...
+Create misprediction explanation utilizing bayesian optimization...
+Best ruleset with most influential features and bayesian optimization without disjunctions:
+
+training_hours <= 85.85 and city_development_index <= 0.63
+
+Specificity: 0.91 Precision: 0.476 Recall: 0.284
+CPU time used extracting features: 0.9812559010000008 seconds
+CPU time used overall without disjunctions: 235.44703557 seconds
+
+Result after max time reached:
+Best ruleset with most influential features and bayesian optimization with disjunctions:
+
+training_hours <= 85.85 and city_development_index <= 0.63 or
+training_hours > 32.64 and city_development_index <= 0.65 or
+city_development_index <= 0.75 or
+city_development_index > 0.92 and city_development_index <= 0.92 or
+city_development_index > 0.92 and city_development_index <= 0.92 or
+city_development_index > 0.92 and city_development_index <= 0.92 or
+city_development_index > 0.92 and city_development_index <= 0.92 or
+city_development_index > 0.92 and city_development_index <= 0.92 or
+city_development_index > 0.92 and city_development_index <= 0.92 or
+city_development_index > 0.92 and city_development_index <= 0.92 or
+city_development_index > 0.92 and city_development_index <= 0.92 or
+city_development_index > 0.92 and city_development_index <= 0.92 or
+city_development_index > 0.92 and city_development_index <= 0.92 or
+city_development_index > 0.92 and city_development_index <= 0.92 or
+city_development_index > 0.92 and city_development_index <= 0.92 or
+city_development_index > 0.92 and city_development_index <= 0.92 or
+city_development_index > 0.92 and city_development_index <= 0.92 or
+city_development_index > 0.92 and city_development_index <= 0.92 or
+city_development_index > 0.92 and city_development_index <= 0.92 or
+city_development_index > 0.92 and city_development_index <= 0.92 or
+city_development_index > 0.92 and city_development_index <= 0.92 or
+city_development_index > 0.92 and city_development_index <= 0.92 or
+city_development_index > 0.92 and city_development_index <= 0.92 or
+city_development_index > 0.92 and city_development_index <= 0.92 or
+city_development_index > 0.92 and city_development_index <= 0.92 or
+city_development_index > 0.92 and city_development_index <= 0.92 or
+city_development_index > 0.92 and city_development_index <= 0.92 or
+city_development_index > 0.92 and city_development_index <= 0.92 or
+city_development_index > 0.92 and city_development_index <= 0.92 or
+city_development_index > 0.92 and city_development_index <= 0.92 or
+city_development_index > 0.92 and city_development_index <= 0.92 or
+city_development_index > 0.92 and city_development_index <= 0.92 or
+city_development_index > 0.92 and city_development_index <= 0.92 or
+city_development_index > 0.92 and city_development_index <= 0.92 or
+city_development_index > 0.92 and city_development_index <= 0.92 or
+city_development_index > 0.92 and city_development_index <= 0.92
+
+Specificity: 0.798 Precision: 0.404 Recall: 0.477
+CPU time used extracting features: 0.9812559010000008 seconds
+CPU time used overall with disjunctions: 7266.005263292999 seconds

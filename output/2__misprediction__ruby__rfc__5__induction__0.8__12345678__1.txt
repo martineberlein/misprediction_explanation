@@ -1,0 +1,28 @@
+Loading model from .joblib...
+Check which test inputs are mispredicted by the model...
+Learn most influential input features...
+Train random forest classifier on misprediction data...
+Use feature importance to explain model...
+Most influential features:
+['duration', 'line_added', 'file_modified', 'commit_num', 'parallel_changed_file_num']
+Build new input dataframe with relevant features...
+Run MMD to create misprediction explanation with rule induction(MMD) without disjunctions...
+Best ruleset with most influential features and rule induction(MMD) without disjunctions:
+
+commit_num > 159.0
+
+Specificity: 0.954 Precision: 0.197 Recall: 0.194
+CPU time used extracting features: 1.1364716189999982 seconds
+CPU time used overall without disjunctions: 57.021981962999995 seconds
+Run MMD to create misprediction explanation with rule induction(MMD) with disjunctions...
+Best ruleset with most influential features and rule induction(MMD) with disjunctions:
+
+commit_num > 78.0 or
+commit_num > 516.0 or
+line_added <= -171.0 or
+parallel_changed_file_num > 9.0 or
+commit_num > 159.0
+
+Specificity: 0.745 Precision: 0.119 Recall: 0.594
+CPU time used extracting features: 1.1364716189999982 seconds
+CPU time used overall with disjunctions: 634.254120332 seconds

@@ -1,0 +1,47 @@
+Loading model from .joblib...
+Check which test inputs are mispredicted by the model...
+Create misprediction explanation by utilizing bayesian optimization...
+Best ruleset with all features and bayesian optimization without disjunctions:
+
+emp_var_rate <= -1.81 and loan_no > 0.76
+
+Specificity: 0.958 Precision: 0.352 Recall: 0.236
+CPU time used without disjunctions: 199.788615122 seconds
+
+Result after max time reached:
+Best ruleset with all features and bayesian optimization with disjunctions:
+
+emp_var_rate <= -1.81 and loan_no > 0.76 or
+employee_8 > 0.26 and education_basic_9y <= 0.07 or
+default_unknown <= 0.90 and employee_9 > 0.79 or
+emp_var_rate <= -1.81 and loan_no <= 0.76 or
+emp_var_rate <= -0.74 and loan_no > 0.76 or
+education_university_degree > 0.69 and emp_var_rate <= -0.34 or
+employee_3 <= 0.33 and education_high_school > 0.87 or
+job_technician > 1.00 and cons_price_idx <= 93.07 or
+job_technician > 1.00 and cons_price_idx <= 93.07 or
+job_technician > 1.00 and cons_price_idx <= 93.07 or
+job_technician > 1.00 and cons_price_idx <= 93.07 or
+job_technician > 1.00 and cons_price_idx <= 93.07 or
+job_technician > 1.00 and cons_price_idx <= 93.07 or
+job_technician > 1.00 and cons_price_idx <= 93.07 or
+job_technician > 1.00 and cons_price_idx <= 93.07 or
+job_technician > 1.00 and cons_price_idx <= 93.07 or
+job_technician > 1.00 and cons_price_idx <= 93.07 or
+job_technician > 1.00 and cons_price_idx <= 93.07 or
+job_technician > 1.00 and cons_price_idx <= 93.07 or
+job_technician > 1.00 and cons_price_idx <= 93.07 or
+job_technician > 1.00 and cons_price_idx <= 93.07 or
+job_technician > 1.00 and cons_price_idx <= 93.07 or
+job_technician > 1.00 and cons_price_idx <= 93.07 or
+job_technician > 1.00 and cons_price_idx <= 93.07 or
+job_technician > 1.00 and cons_price_idx <= 93.07 or
+job_technician > 1.00 and cons_price_idx <= 93.07 or
+job_technician > 1.00 and cons_price_idx <= 93.07 or
+job_technician > 1.00 and cons_price_idx <= 93.07 or
+job_technician > 1.00 and cons_price_idx <= 93.07 or
+job_technician > 1.00 and cons_price_idx <= 93.07 or
+job_technician > 1.00 and cons_price_idx <= 93.07
+
+Specificity: 0.621 Precision: 0.156 Recall: 0.715
+CPU time used with disjunctions: 7330.775055044999 seconds

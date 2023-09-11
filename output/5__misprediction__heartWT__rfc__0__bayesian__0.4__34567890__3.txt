@@ -1,0 +1,16 @@
+Loading model from .joblib...
+Check which test inputs are mispredicted by the model...
+Create misprediction explanation by utilizing bayesian optimization...
+Best ruleset with all features and bayesian optimization without disjunctions:
+
+platelets > 167213.87 and anaemia > 0.91
+
+Specificity: 0.729 Precision: 0.424 Recall: 0.7
+CPU time used without disjunctions: 264.786615376 seconds
+
+Best ruleset with all features and bayesian optimization with disjunctions:
+
+platelets > 167213.87 and anaemia > 0.91
+
+Specificity: 0.729 Precision: 0.424 Recall: 0.7
+CPU time used with disjunctions: 264.78663117599996 seconds

@@ -1,0 +1,18 @@
+Loading model from .joblib...
+Check which test inputs are mispredicted by the model...
+Create misprediction explanation by learning decision trees...
+Best ruleset with all features and decision trees without disjunctions:
+
+ph > 5.6238136 and Chloramines > 7.0370619
+
+Specificity: 0.605 Precision: 0.429 Recall: 0.603
+CPU time used without disjunctions: 0.06033918600000021 seconds
+
+Best ruleset with all features and decision trees with disjunctions:
+
+ph > 5.6238136 and Chloramines > 7.0370619 or
+Chloramines <= 6.8950799 and Trihalomethanes <= 38.9504929 or
+Hardness > 229.9599686 and Conductivity <= 509.7774811
+
+Specificity: 0.528 Precision: 0.428 Recall: 0.719
+CPU time used with disjunctions: 0.07706152000000088 seconds

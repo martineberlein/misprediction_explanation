@@ -1,0 +1,17 @@
+Loading model from .joblib...
+Check which test inputs are mispredicted by the model...
+Create misprediction explanation by utilizing bayesian optimization...
+Best ruleset with all features and bayesian optimization without disjunctions:
+
+smoking > 0.81 and diabetes > 0.53
+
+Specificity: 0.894 Precision: 0.462 Recall: 0.25
+CPU time used without disjunctions: 192.079240099 seconds
+
+Best ruleset with all features and bayesian optimization with disjunctions:
+
+smoking > 0.81 and diabetes > 0.53 or
+smoking <= 0.53 and sex > 0.33
+
+Specificity: 0.636 Precision: 0.385 Recall: 0.625
+CPU time used with disjunctions: 415.521663129 seconds

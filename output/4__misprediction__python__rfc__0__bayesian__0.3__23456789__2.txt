@@ -1,0 +1,19 @@
+Loading model from .joblib...
+Check which test inputs are mispredicted by the model...
+Create misprediction explanation by utilizing bayesian optimization...
+Best ruleset with all features and bayesian optimization without disjunctions:
+
+developer_num > 10.74 and commit_density > -13507.02
+
+Specificity: 0.991 Precision: 0.239 Recall: 0.045
+CPU time used without disjunctions: 206.760480094 seconds
+
+Best ruleset with all features and bayesian optimization with disjunctions:
+
+developer_num > 10.74 and commit_density > -13507.02 or
+document_frequency <= 3.42 and file_added <= -192.08 or
+commit_num > 97.86 and fix_frequency <= 1.89 or
+delete_frequency <= 0.35 and file_modified <= -133.94
+
+Specificity: 0.884 Precision: 0.167 Recall: 0.364
+CPU time used with disjunctions: 880.1115317419999 seconds

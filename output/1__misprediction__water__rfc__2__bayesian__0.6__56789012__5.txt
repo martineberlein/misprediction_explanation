@@ -1,0 +1,25 @@
+Loading model from .joblib...
+Check which test inputs are mispredicted by the model...
+Learn most influential input features...
+Train random forest classifier on misprediction data...
+Use feature importance to explain model...
+Most influential features:
+['Sulfate', 'ph']
+Build new input dataframe with relevant features...
+Create misprediction explanation utilizing bayesian optimization...
+Best ruleset with most influential features and bayesian optimization without disjunctions:
+
+Sulfate <= 367.90 and ph > 6.50
+
+Specificity: 0.526 Precision: 0.381 Recall: 0.593
+CPU time used extracting features: 0.39433959900000026 seconds
+CPU time used overall without disjunctions: 218.736876084 seconds
+
+Best ruleset with most influential features and bayesian optimization with disjunctions:
+
+Sulfate <= 367.90 and ph > 6.50 or
+Sulfate <= 391.96 and Sulfate > 335.79
+
+Specificity: 0.326 Precision: 0.38 Recall: 0.839
+CPU time used extracting features: 0.39433959900000026 seconds
+CPU time used overall with disjunctions: 452.79952194399993 seconds

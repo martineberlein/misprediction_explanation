@@ -1,0 +1,17 @@
+Loading model from .joblib...
+Check which test inputs are mispredicted by the model...
+Run MMD to create misprediction explanation with rule induction(MMD) without disjunctions...
+Best ruleset with all features and rule induction(MMD) without disjunctions:
+
+ph > 5.762552
+
+Specificity: 0.23 Precision: 0.343 Recall: 0.869
+CPU time used without disjunctions: 20.019810258 seconds
+Run MMD to create misprediction explanation with rule induction(MMD) with disjunctions...
+Best ruleset with all features and rule induction(MMD) with disjunctions:
+
+ph > 5.762552 or
+Chloramines <= 6.010569 and Trihalomethanes <= 70.546862
+
+Specificity: 0.22 Precision: 0.351 Recall: 0.911
+CPU time used with disjunctions: 90.29590398899998 seconds

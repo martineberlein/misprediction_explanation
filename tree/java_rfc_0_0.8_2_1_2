@@ -1,0 +1,17 @@
+digraph Tree {
+node [shape=box, fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="parallel_changed_file_num <= 1.5\ngini = 0.046\nsamples = 5464\nvalue = [5335, 129]"] ;
+1 [label="commit_num <= 518.0\ngini = 0.017\nsamples = 5128\nvalue = [5083, 45]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="gini = 0.011\nsamples = 5061\nvalue = [5032, 29]"] ;
+1 -> 2 ;
+3 [label="gini = 0.364\nsamples = 67\nvalue = [51, 16]"] ;
+1 -> 3 ;
+4 [label="duration <= 1039.0\ngini = 0.375\nsamples = 336\nvalue = [252, 84]"] ;
+0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+5 [label="gini = 0.345\nsamples = 311\nvalue = [242, 69]"] ;
+4 -> 5 ;
+6 [label="gini = 0.48\nsamples = 25\nvalue = [10, 15]"] ;
+4 -> 6 ;
+}

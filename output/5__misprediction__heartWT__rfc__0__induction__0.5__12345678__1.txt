@@ -1,0 +1,19 @@
+Loading model from .joblib...
+Check which test inputs are mispredicted by the model...
+Run MMD to create misprediction explanation with rule induction(MMD) without disjunctions...
+Best ruleset with all features and rule induction(MMD) without disjunctions:
+
+age > 77 and creatinine_phosphokinase > 90
+
+Specificity: 1.0 Precision: 1.0 Recall: 0.2
+CPU time used without disjunctions: 14.755066374 seconds
+Run MMD to create misprediction explanation with rule induction(MMD) with disjunctions...
+Best ruleset with all features and rule induction(MMD) with disjunctions:
+
+age > 77 and creatinine_phosphokinase > 90 or
+age > 57 and ejection_fraction <= 30 and platelets > 226000 or
+age > 77 or
+serum_creatinine > 2.5
+
+Specificity: 0.95 Precision: 0.842 Recall: 0.533
+CPU time used with disjunctions: 99.16310029 seconds

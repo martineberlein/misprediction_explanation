@@ -1,0 +1,25 @@
+Loading model from .joblib...
+Check which test inputs are mispredicted by the model...
+Learn most influential input features...
+Train random forest classifier on misprediction data...
+Use feature importance to explain model...
+Most influential features:
+['creatinine_phosphokinase', 'age', 'serum_creatinine', 'ejection_fraction', 'platelets']
+Build new input dataframe with relevant features...
+Create misprediction explanation utilizing bayesian optimization...
+Best ruleset with most influential features and bayesian optimization without disjunctions:
+
+creatinine_phosphokinase <= 5850.91 and age > 79.40
+
+Specificity: 0.985 Precision: 0.75 Recall: 0.125
+CPU time used extracting features: 0.20756196900000035 seconds
+CPU time used overall without disjunctions: 229.102603963 seconds
+
+Best ruleset with most influential features and bayesian optimization with disjunctions:
+
+creatinine_phosphokinase <= 5850.91 and age > 79.40 or
+creatinine_phosphokinase <= 1170.39 and ejection_fraction <= 27.61
+
+Specificity: 0.848 Precision: 0.524 Recall: 0.458
+CPU time used extracting features: 0.20756196900000035 seconds
+CPU time used overall with disjunctions: 478.65873348900004 seconds

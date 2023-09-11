@@ -1,0 +1,26 @@
+Loading model from .joblib...
+Check which test inputs are mispredicted by the model...
+Learn most influential input features...
+Train random forest classifier on misprediction data...
+Use feature importance to explain model...
+Most influential features:
+['last_new_job', 'experience', 'city_development_index', 'training_hours']
+Build new input dataframe with relevant features...
+Create misprediction explanation utilizing bayesian optimization...
+Best ruleset with most influential features and bayesian optimization without disjunctions:
+
+city_development_index <= 0.65 and last_new_job <= 4.65
+
+Specificity: 0.888 Precision: 0.469 Recall: 0.363
+CPU time used extracting features: 0.9681521769999986 seconds
+CPU time used overall without disjunctions: 188.88010058100002 seconds
+
+Best ruleset with most influential features and bayesian optimization with disjunctions:
+
+city_development_index <= 0.65 and last_new_job <= 4.65 or
+experience <= 11.84 and city_development_index <= 0.79 or
+experience <= 5.64 and last_new_job <= 3.57
+
+Specificity: 0.615 Precision: 0.309 Recall: 0.63
+CPU time used extracting features: 0.9681521769999986 seconds
+CPU time used overall with disjunctions: 606.266681676 seconds

@@ -1,0 +1,17 @@
+Loading model from .joblib...
+Check which test inputs are mispredicted by the model...
+Run MMD to create misprediction explanation with rule induction(MMD) without disjunctions...
+Best ruleset with all features and rule induction(MMD) without disjunctions:
+
+ejection_fraction <= 25
+
+Specificity: 0.862 Precision: 0.571 Recall: 0.48
+CPU time used without disjunctions: 14.658143643999999 seconds
+Run MMD to create misprediction explanation with rule induction(MMD) with disjunctions...
+Best ruleset with all features and rule induction(MMD) with disjunctions:
+
+serum_sodium > 143 or
+ejection_fraction <= 25
+
+Specificity: 0.862 Precision: 0.591 Recall: 0.52
+CPU time used with disjunctions: 43.756542233999994 seconds

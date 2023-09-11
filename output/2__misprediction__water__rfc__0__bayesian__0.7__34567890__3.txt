@@ -1,0 +1,16 @@
+Loading model from .joblib...
+Check which test inputs are mispredicted by the model...
+Create misprediction explanation by utilizing bayesian optimization...
+Best ruleset with all features and bayesian optimization without disjunctions:
+
+Chloramines > 5.09 and ph > 5.02
+
+Specificity: 0.207 Precision: 0.361 Recall: 0.91
+CPU time used without disjunctions: 183.47214289 seconds
+
+Best ruleset with all features and bayesian optimization with disjunctions:
+
+Chloramines > 5.09 and ph > 5.02
+
+Specificity: 0.207 Precision: 0.361 Recall: 0.91
+CPU time used with disjunctions: 183.473089043 seconds

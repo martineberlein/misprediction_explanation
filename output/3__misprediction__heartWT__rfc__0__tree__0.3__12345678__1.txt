@@ -1,0 +1,17 @@
+Loading model from .joblib...
+Check which test inputs are mispredicted by the model...
+Create misprediction explanation by learning decision trees...
+Best ruleset with all features and decision trees without disjunctions:
+
+age > 79.0 and serum_creatinine <= 1.7
+
+Specificity: 1.0 Precision: 1.0 Recall: 0.267
+CPU time used without disjunctions: 0.012107432000000529 seconds
+
+Best ruleset with all features and decision trees with disjunctions:
+
+age > 79.0 and serum_creatinine <= 1.7 or
+diabetes > 0.5 and serum_creatinine > 0.95
+
+Specificity: 0.85 Precision: 0.719 Recall: 0.767
+CPU time used with disjunctions: 0.01826027799999963 seconds

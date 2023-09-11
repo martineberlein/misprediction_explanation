@@ -1,0 +1,17 @@
+digraph Tree {
+node [shape=box, fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="deposit <= 0.5\ngini = 0.178\nsamples = 3821\nvalue = [3443, 378]"] ;
+1 [label="required_car_parking_spaces <= 0.5\ngini = 0.214\nsamples = 3087\nvalue = [2710, 377]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="gini = 0.232\nsamples = 2820\nvalue = [2443, 377]"] ;
+1 -> 2 ;
+3 [label="gini = 0.0\nsamples = 267\nvalue = [267, 0]"] ;
+1 -> 3 ;
+4 [label="previous_bookings_not_canceled <= 0.5\ngini = 0.003\nsamples = 734\nvalue = [733, 1]"] ;
+0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+5 [label="gini = 0.0\nsamples = 733\nvalue = [733, 0]"] ;
+4 -> 5 ;
+6 [label="gini = 0.0\nsamples = 1\nvalue = [0, 1]"] ;
+4 -> 6 ;
+}

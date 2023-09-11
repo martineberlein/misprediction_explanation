@@ -1,0 +1,16 @@
+Loading model from .joblib...
+Check which test inputs are mispredicted by the model...
+Create misprediction explanation by learning decision trees...
+Best ruleset with all features and decision trees without disjunctions:
+
+ejection_fraction <= 32.5 and smoking <= 0.5
+
+Specificity: 0.908 Precision: 0.684 Recall: 0.52
+CPU time used without disjunctions: 0.008091891000001183 seconds
+
+Best ruleset with all features and decision trees with disjunctions:
+
+ejection_fraction <= 32.5 and smoking <= 0.5
+
+Specificity: 0.908 Precision: 0.684 Recall: 0.52
+CPU time used with disjunctions: 0.008116507000000439 seconds

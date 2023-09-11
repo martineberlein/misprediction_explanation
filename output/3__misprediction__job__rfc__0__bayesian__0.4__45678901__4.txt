@@ -1,0 +1,16 @@
+Loading model from .joblib...
+Check which test inputs are mispredicted by the model...
+Create misprediction explanation by utilizing bayesian optimization...
+Best ruleset with all features and bayesian optimization without disjunctions:
+
+company_type_NGO <= 0.61 and city_development_index <= 0.79
+
+Specificity: 0.764 Precision: 0.387 Recall: 0.52
+CPU time used without disjunctions: 221.526413594 seconds
+
+Best ruleset with all features and bayesian optimization with disjunctions:
+
+company_type_NGO <= 0.61 and city_development_index <= 0.79
+
+Specificity: 0.764 Precision: 0.387 Recall: 0.52
+CPU time used with disjunctions: 221.526430265 seconds

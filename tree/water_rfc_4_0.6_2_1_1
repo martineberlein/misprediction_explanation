@@ -1,0 +1,17 @@
+digraph Tree {
+node [shape=box, fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="ph <= 5.48\ngini = 0.441\nsamples = 604\nvalue = [406, 198]"] ;
+1 [label="Hardness <= 150.217\ngini = 0.267\nsamples = 82\nvalue = [69, 13]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="gini = 0.486\nsamples = 12\nvalue = [7, 5]"] ;
+1 -> 2 ;
+3 [label="gini = 0.202\nsamples = 70\nvalue = [62, 8]"] ;
+1 -> 3 ;
+4 [label="Conductivity <= 460.227\ngini = 0.458\nsamples = 522\nvalue = [337, 185]"] ;
+0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+5 [label="gini = 0.424\nsamples = 334\nvalue = [232, 102]"] ;
+4 -> 5 ;
+6 [label="gini = 0.493\nsamples = 188\nvalue = [105, 83]"] ;
+4 -> 6 ;
+}

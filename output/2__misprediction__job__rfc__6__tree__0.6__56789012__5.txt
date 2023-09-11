@@ -1,0 +1,25 @@
+Loading model from .joblib...
+Check which test inputs are mispredicted by the model...
+Learn most influential input features...
+Train random forest classifier on misprediction data...
+Use feature importance to explain model...
+Most influential features:
+['relevent_experience', 'company_size_unknown', 'last_new_job', 'experience', 'city_development_index', 'training_hours']
+Build new input dataframe with relevant features...
+Create misprediction explanation by learning decision trees...
+Best ruleset with most influential features and decision trees without disjunctions:
+
+city_development_index <= 0.632 and training_hours <= 99.5
+
+Specificity: 0.908 Precision: 0.492 Recall: 0.32
+CPU time used extracting features: 1.0043937419999978 seconds
+CPU time used overall without disjunctions: 1.036500243999999 seconds
+
+Best ruleset with most influential features and decision trees with disjunctions:
+
+city_development_index <= 0.632 and training_hours <= 99.5 or
+company_size_unknown > 0.5 and last_new_job > 0.5
+
+Specificity: 0.753 Precision: 0.413 Recall: 0.624
+CPU time used extracting features: 1.0043937419999978 seconds
+CPU time used overall with disjunctions: 1.0449412309999992 seconds

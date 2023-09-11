@@ -1,0 +1,16 @@
+Loading model from .joblib...
+Check which test inputs are mispredicted by the model...
+Create misprediction explanation by utilizing bayesian optimization...
+Best ruleset with all features and bayesian optimization without disjunctions:
+
+Turbidity <= 5.02 and Trihalomethanes <= 95.20
+
+Specificity: 0.148 Precision: 0.326 Recall: 0.89
+CPU time used without disjunctions: 174.130229382 seconds
+
+Best ruleset with all features and bayesian optimization with disjunctions:
+
+Turbidity <= 5.02 and Trihalomethanes <= 95.20
+
+Specificity: 0.148 Precision: 0.326 Recall: 0.89
+CPU time used with disjunctions: 174.131680092 seconds

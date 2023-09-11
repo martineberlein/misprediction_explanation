@@ -1,0 +1,17 @@
+Loading model from .joblib...
+Check which test inputs are mispredicted by the model...
+Create misprediction explanation by utilizing bayesian optimization...
+Best ruleset with all features and bayesian optimization without disjunctions:
+
+distribution_channel_TA_TO > 0.47 and arrival_date_year > 2016.78
+
+Specificity: 0.738 Precision: 0.212 Recall: 0.377
+CPU time used without disjunctions: 289.558477384 seconds
+
+Best ruleset with all features and bayesian optimization with disjunctions:
+
+distribution_channel_TA_TO > 0.47 and arrival_date_year > 2016.78 or
+lead_time <= 398.75 and deposit <= 0.98
+
+Specificity: 0.115 Precision: 0.174 Recall: 0.997
+CPU time used with disjunctions: 572.7940111110001 seconds

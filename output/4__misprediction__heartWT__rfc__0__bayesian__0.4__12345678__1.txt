@@ -1,0 +1,16 @@
+Loading model from .joblib...
+Check which test inputs are mispredicted by the model...
+Create misprediction explanation by utilizing bayesian optimization...
+Best ruleset with all features and bayesian optimization without disjunctions:
+
+serum_creatinine > 1.02 and diabetes > 0.53
+
+Specificity: 0.917 Precision: 0.706 Recall: 0.4
+CPU time used without disjunctions: 277.156210779 seconds
+
+Best ruleset with all features and bayesian optimization with disjunctions:
+
+serum_creatinine > 1.02 and diabetes > 0.53
+
+Specificity: 0.917 Precision: 0.706 Recall: 0.4
+CPU time used with disjunctions: 277.157317486 seconds

@@ -1,0 +1,16 @@
+Loading model from .joblib...
+Check which test inputs are mispredicted by the model...
+Create misprediction explanation by utilizing bayesian optimization...
+Best ruleset with all features and bayesian optimization without disjunctions:
+
+high_blood_pressure > 0.68 and diabetes > 0.96
+
+Specificity: 0.94 Precision: 0.636 Recall: 0.304
+CPU time used without disjunctions: 201.78818496 seconds
+
+Best ruleset with all features and bayesian optimization with disjunctions:
+
+high_blood_pressure > 0.68 and diabetes > 0.96
+
+Specificity: 0.94 Precision: 0.636 Recall: 0.304
+CPU time used with disjunctions: 201.788245033 seconds

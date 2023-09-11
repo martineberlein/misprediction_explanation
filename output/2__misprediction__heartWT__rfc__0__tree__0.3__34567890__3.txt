@@ -1,0 +1,16 @@
+Loading model from .joblib...
+Check which test inputs are mispredicted by the model...
+Create misprediction explanation by learning decision trees...
+Best ruleset with all features and decision trees without disjunctions:
+
+anaemia > 0.5 and creatinine_phosphokinase > 91.0
+
+Specificity: 0.743 Precision: 0.455 Recall: 0.75
+CPU time used without disjunctions: 0.008977733999999238 seconds
+
+Best ruleset with all features and decision trees with disjunctions:
+
+anaemia > 0.5 and creatinine_phosphokinase > 91.0
+
+Specificity: 0.743 Precision: 0.455 Recall: 0.75
+CPU time used with disjunctions: 0.009000666999999574 seconds

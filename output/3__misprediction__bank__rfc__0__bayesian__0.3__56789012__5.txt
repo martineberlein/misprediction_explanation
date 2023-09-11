@@ -1,0 +1,18 @@
+Loading model from .joblib...
+Check which test inputs are mispredicted by the model...
+Create misprediction explanation by utilizing bayesian optimization...
+Best ruleset with all features and bayesian optimization without disjunctions:
+
+emp_var_rate <= -1.81 and loan_no > 0.76
+
+Specificity: 0.958 Precision: 0.352 Recall: 0.236
+CPU time used without disjunctions: 189.291093535 seconds
+
+Best ruleset with all features and bayesian optimization with disjunctions:
+
+emp_var_rate <= -1.81 and loan_no > 0.76 or
+employee_8 > 0.26 and education_basic_9y <= 0.07 or
+default_unknown <= 0.90 and employee_9 > 0.79
+
+Specificity: 0.936 Precision: 0.338 Recall: 0.333
+CPU time used with disjunctions: 649.579273881 seconds

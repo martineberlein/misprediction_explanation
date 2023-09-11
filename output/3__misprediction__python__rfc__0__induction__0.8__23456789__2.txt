@@ -1,0 +1,21 @@
+Loading model from .joblib...
+Check which test inputs are mispredicted by the model...
+Run MMD to create misprediction explanation with rule induction(MMD) without disjunctions...
+Best ruleset with all features and rule induction(MMD) without disjunctions:
+
+parallel_changed_file_num > 15.0
+
+Specificity: 0.994 Precision: 0.244 Recall: 0.028
+CPU time used without disjunctions: 186.912639093 seconds
+Run MMD to create misprediction explanation with rule induction(MMD) with disjunctions...
+Best ruleset with all features and rule induction(MMD) with disjunctions:
+
+developer_num > 17.0 or
+commit_num > 71.0 or
+line_added <= -1321.0 or
+file_modified > 82.0 or
+line_removed > 395.0 or
+parallel_changed_file_num > 7.0
+
+Specificity: 0.76 Precision: 0.137 Recall: 0.594
+CPU time used with disjunctions: 2294.928516059 seconds

@@ -1,0 +1,17 @@
+Loading model from .joblib...
+Check which test inputs are mispredicted by the model...
+Run MMD to create misprediction explanation with rule induction(MMD) without disjunctions...
+Best ruleset with all features and rule induction(MMD) without disjunctions:
+
+city_development_index <= 0.645
+
+Specificity: 0.875 Precision: 0.47 Recall: 0.382
+CPU time used without disjunctions: 54.321927488 seconds
+Run MMD to create misprediction explanation with rule induction(MMD) with disjunctions...
+Best ruleset with all features and rule induction(MMD) with disjunctions:
+
+city_development_index <= 0.645 or
+city_development_index <= 0.74
+
+Specificity: 0.808 Precision: 0.418 Recall: 0.477
+CPU time used with disjunctions: 122.90260760100001 seconds

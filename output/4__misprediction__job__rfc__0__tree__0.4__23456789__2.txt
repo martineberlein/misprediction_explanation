@@ -1,0 +1,17 @@
+Loading model from .joblib...
+Check which test inputs are mispredicted by the model...
+Create misprediction explanation by learning decision trees...
+Best ruleset with all features and decision trees without disjunctions:
+
+city_development_index <= 0.665 and company_size_10_49 <= 0.5
+
+Specificity: 0.889 Precision: 0.482 Recall: 0.357
+CPU time used without disjunctions: 0.06521233300000162 seconds
+
+Best ruleset with all features and decision trees with disjunctions:
+
+city_development_index <= 0.665 and company_size_10_49 <= 0.5 or
+company_size_unknown > 0.5 and major_discipline_unknown <= 0.5
+
+Specificity: 0.745 Precision: 0.436 Recall: 0.681
+CPU time used with disjunctions: 0.08064662500000352 seconds

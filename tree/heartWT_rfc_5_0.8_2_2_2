@@ -1,0 +1,17 @@
+digraph Tree {
+node [shape=box, fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="age <= 64.5\ngini = 0.274\nsamples = 67\nvalue = [56, 11]"] ;
+1 [label="serum_creatinine <= 3.8\ngini = 0.097\nsamples = 39\nvalue = [37, 2]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="gini = 0.051\nsamples = 38\nvalue = [37, 1]"] ;
+1 -> 2 ;
+3 [label="gini = 0.0\nsamples = 1\nvalue = [0, 1]"] ;
+1 -> 3 ;
+4 [label="creatinine_phosphokinase <= 87.5\ngini = 0.436\nsamples = 28\nvalue = [19, 9]"] ;
+0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+5 [label="gini = 0.0\nsamples = 7\nvalue = [7, 0]"] ;
+4 -> 5 ;
+6 [label="gini = 0.49\nsamples = 21\nvalue = [12, 9]"] ;
+4 -> 6 ;
+}

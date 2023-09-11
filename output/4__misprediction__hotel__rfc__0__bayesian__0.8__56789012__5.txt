@@ -1,0 +1,18 @@
+Loading model from .joblib...
+Check which test inputs are mispredicted by the model...
+Create misprediction explanation by utilizing bayesian optimization...
+Best ruleset with all features and bayesian optimization without disjunctions:
+
+market_segment_Online_TA > 0.69
+
+Specificity: 0.568 Precision: 0.249 Recall: 0.713
+CPU time used without disjunctions: 241.67085036999998 seconds
+
+Best ruleset with all features and bayesian optimization with disjunctions:
+
+market_segment_Online_TA > 0.69 or
+reserved_room_type_A <= 0.34 and booking_changes <= 0.01 or
+market_segment_Direct > 0.27
+
+Specificity: 0.417 Precision: 0.224 Recall: 0.834
+CPU time used with disjunctions: 776.420124072 seconds

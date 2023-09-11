@@ -1,0 +1,25 @@
+Loading model from .joblib...
+Check which test inputs are mispredicted by the model...
+Learn most influential input features...
+Train random forest classifier on misprediction data...
+Use feature importance to explain model...
+Most influential features:
+['serum_creatinine', 'ejection_fraction', 'platelets']
+Build new input dataframe with relevant features...
+Create misprediction explanation utilizing bayesian optimization...
+Best ruleset with most influential features and bayesian optimization without disjunctions:
+
+serum_creatinine <= 1.30 and ejection_fraction <= 28.60
+
+Specificity: 0.909 Precision: 0.571 Recall: 0.333
+CPU time used extracting features: 0.20644643700000032 seconds
+CPU time used overall without disjunctions: 236.544583551 seconds
+
+Best ruleset with most influential features and bayesian optimization with disjunctions:
+
+serum_creatinine <= 1.30 and ejection_fraction <= 28.60 or
+ejection_fraction > 20.00 and serum_creatinine > 1.13
+
+Specificity: 0.682 Precision: 0.462 Recall: 0.75
+CPU time used extracting features: 0.20644643700000032 seconds
+CPU time used overall with disjunctions: 451.37231775099997 seconds

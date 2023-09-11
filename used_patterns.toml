@@ -1,0 +1,15 @@
+[[Existential]]
+
+name = "Existence Numeric String Smaller Than"
+constraint = '''
+forall <?NONTERMINAL> elem in start:
+  (<= (str.to.int elem) (str.to.int <?STRING>))
+'''
+
+[[Existential]]
+
+name = "Existence Numeric String Larger Than"
+constraint = '''
+forall <?NONTERMINAL> elem in start:
+  (> (str.to.int elem) (str.to.int <?STRING>))
+'''

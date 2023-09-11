@@ -1,0 +1,26 @@
+Loading model from .joblib...
+Check which test inputs are mispredicted by the model...
+Learn most influential input features...
+Train random forest classifier on misprediction data...
+Use feature importance to explain model...
+Most influential features:
+['line_added', 'line_removed', 'file_modified', 'duration', 'commit_num', 'parallel_changed_file_num']
+Build new input dataframe with relevant features...
+Create misprediction explanation utilizing bayesian optimization...
+Best ruleset with most influential features and bayesian optimization without disjunctions:
+
+file_modified > 19.98 and commit_num <= 3782.66
+
+Specificity: 0.919 Precision: 0.151 Recall: 0.22
+CPU time used extracting features: 1.227623486999999 seconds
+CPU time used overall without disjunctions: 214.929947928 seconds
+
+Best ruleset with most influential features and bayesian optimization with disjunctions:
+
+file_modified > 19.98 and commit_num <= 3782.66 or
+duration > -4513.30 and line_removed <= -45439.89 or
+parallel_changed_file_num > 0.00 and line_removed > -45052.00
+
+Specificity: 0.739 Precision: 0.199 Recall: 0.995
+CPU time used extracting features: 1.227623486999999 seconds
+CPU time used overall with disjunctions: 637.6777305859999 seconds

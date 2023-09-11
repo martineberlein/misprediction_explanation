@@ -1,0 +1,26 @@
+Loading model from .joblib...
+Check which test inputs are mispredicted by the model...
+Learn most influential input features...
+Train random forest classifier on misprediction data...
+Use feature importance to explain model...
+Most influential features:
+['Sulfate', 'Chloramines', 'Hardness', 'Conductivity', 'ph']
+Build new input dataframe with relevant features...
+Run MMD to create misprediction explanation with rule induction(MMD) without disjunctions...
+Best ruleset with most influential features and rule induction(MMD) without disjunctions:
+
+ph > 5.892413
+
+Specificity: 0.235 Precision: 0.36 Recall: 0.874
+CPU time used extracting features: 0.41236654799999783 seconds
+CPU time used overall without disjunctions: 11.548514943999997 seconds
+Run MMD to create misprediction explanation with rule induction(MMD) with disjunctions...
+Best ruleset with most influential features and rule induction(MMD) with disjunctions:
+
+Conductivity <= 405.48551 or
+Chloramines > 7.504453 and Hardness > 220.387164 or
+Chloramines > 11.078872
+
+Specificity: 0.607 Precision: 0.413 Recall: 0.563
+CPU time used extracting features: 0.41236654799999783 seconds
+CPU time used overall with disjunctions: 53.008318422 seconds
