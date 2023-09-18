@@ -7,7 +7,8 @@ This repository contains data sets, trained black boxes, evaluation code and res
 -evaluation: contains experimental results in .csv files and graphs  
 -grammars: contains grammars needed for ISLearn  
 -mmd: contains MMD implementation from Cito et al.  
--output: contains the raw output of all experiments  
+-output: contains the raw output of all experiments
+-thesis: contains digital version of the master thesis  
 -tree: contains decision trees trained to extract rules  
   
 -construct-grammar.py: code to construct grammars for ISLearn  
